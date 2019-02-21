@@ -12,7 +12,8 @@ import java.util.Map;
 
 public class Appearance {
 
-
+//this method is used to check occurrence of string
+// value in big paragraph we set value is true if that string appears 2 or more times in the array
     public String checkAppearance(String input){
         if(input==null)return null;
         List<String> stringList= Arrays.asList(input.split("[\\W_]+"));

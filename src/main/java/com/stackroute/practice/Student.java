@@ -18,6 +18,7 @@ public class Student {
     private String name;
     private int age;
 
+    //constructor
     public Student(int id, String name, int age) {
         this.id = id;
         this.name = name;
@@ -58,10 +59,13 @@ public class Student {
     }
 
 
-
 }
 
 class StudentSorter implements Comparator<Student> {
+
+//    Sort the list based on their age in decreasing order, for student having
+//        same age, sort based on their name.
+//        f. For students having same name and age, sort them according to their ID.
 
     @Override
     public int compare(Student student, Student t1) {

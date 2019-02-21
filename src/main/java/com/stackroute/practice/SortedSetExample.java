@@ -11,6 +11,9 @@ package com.stackroute.practice;
 import java.util.*;
 
 public class SortedSetExample {
+
+//    method is used to implement set interface which sorts the given randomly ordered names in
+//        ascending order
     public String sortArrayListUsingSortedSet(String string){
         if (string==null)return null;
         SortedSet<String> sortedSet=new TreeSet<>(Arrays.asList(string.split(" ")));
